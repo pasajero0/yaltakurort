@@ -1,0 +1,55 @@
+.contactUs {
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__inputsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    input {
+      width: 49%;
+    }
+
+  }
+
+  &__input, &__textarea {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: 2px solid $mainColor;
+    font-family: $main_font;
+    font-size: 18px;
+    color: $textColor;
+  }
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactUs {
+    &__inputsContainer {
+      input {
+        width: 100%;
+      }
+  
+    }
+  }
+}

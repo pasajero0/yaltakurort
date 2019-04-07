@@ -1,0 +1,31 @@
+.price {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__table {
+    vertical-align: middle;
+    margin: 0 auto;
+    // box-shadow: 0 0 15px -5px;
+    background: $tableColor;
+    td {
+      border: 2px solid #fff;
+      padding: 5px;
+    }
+    .western {
+      text-align: center;
+    }
+  }
+
+  &__trTitle {
+    font-weight: 600;
+  }
+
+}
+
+@media only screen and (max-width: 820px){
+  .price {
+    &__tableWrapper {
+      overflow-x: scroll;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.header {
+  background: $mainColor;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__phones {
+    margin-right: 10px;
+  }
+  &__phones, &__location {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__phone, &__location{
+    color: $textColor;
+    // font-size: 22px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__svg {
+    min-width: 45px;
+    margin-right: 25px;
+  }
+  &__phoneAddressWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 305px;
+  }
+}
+
+@media only screen and (max-width : 800px) {  
+  .header {
+    .container {
+      justify-content: center;
+    }
+    &__svg {
+      margin-right: 10px;
+    }
+  }
+  @media only screen and (max-width : 770px) {  
+    .header {
+      &__phones {
+        margin-bottom: 10px;
+      }
+      &__location, &__phones {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 760px) {
+  .header {
+    &__location, &__phones {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .header {
+    &__phoneAddressWrapper {
+      flex-direction: column;
+      min-width: 190px;
+    }
+    &__phoneAddressWrapper :first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+.howToGet {
+  &__paragraph {
+    margin: 0 80px 30px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .howToGet {
+    &__paragraph {
+      margin: 0 20px 30px;
+    }
+  }
+  @media only screen and (max-width: 350px){
+    .howToGet {
+      &__paragraph {
+        margin: 0 0 30px;
+      }
+    }
+  }
+}
