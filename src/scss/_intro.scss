@@ -1,9 +1,51 @@
 .intro {
+
   &__border {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    height: 500px;
+    // height: 500px;
     border: 2px solid $mainColor;
     box-sizing: border-box;
     padding: 50px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 322px;
+  }
+
+  &__headerLogo {
+    width: 250px;
+  }
+
+  &__sliderWrapper {
+    img {
+      height: 450px;
+    }
+  }
+  
+  // &__slide {
+  //   overflow: hidden;
+  //   img {
+  //     height: 400px;
+  //   }
+  // }
+}
+
+@media only screen and (max-width: 1156px) {
+  .intro {
+    &__border {
+      justify-content: center;
+    }
+    &__header{
+      min-height: 200px;
+      margin-bottom: 30px;
+    }
   }
 }
