@@ -24,6 +24,11 @@
     display: flex;
     flex-direction: column;
   }
+  &__phoneAddressWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+  }
   &__phones, &__location, &__mail {
     display: inline-flex;
     align-items: center;
@@ -31,9 +36,6 @@
   }
   &__phone, &__location, &__mail {
     color: $textColor;
-  }
-  &__phones :nth-child(2) {
-    margin-right: 25px;
   }
   &__svg {
     width: 30px;
@@ -43,6 +45,7 @@
   &__copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
   }
 }
@@ -55,6 +58,39 @@
     }
     &__info {
       margin-top: 20px;
+    }
+    &__copyright {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width : 550px) {  
+  .footer {
+    &__copyright {
+      flex-direction: column;
+      
+    }
+  }
+}
+
+@media only screen and (max-width : 450px) {  
+  .footer {
+    &__phones, &__location, &__mail {
+      margin: 15px 0;
+    }
+    &__phoneAddressWrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 230px;
+    }
+  }
+}
+
+@media only screen and (max-width : 340px) {  
+  .footer {
+    p {
+      font-size: 17px;
     }
   }
 }

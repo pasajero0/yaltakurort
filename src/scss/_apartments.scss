@@ -11,8 +11,9 @@
       left: 0;
     }
     .slick-dots {
+      left: 0;
       bottom: -50px;
-      width: 94%;
+      width: 100%;
     }
 
     .apartments__prevArrow, .apartments__nextArrow {
@@ -53,8 +54,8 @@
   }
   &__slideImg {
     width: 100%;
-    min-height: 200px;
-    // height: 200px;
+    // min-height: 200px;
+    height: 200px;
     overflow: hidden;
     margin-bottom: 30px;
 

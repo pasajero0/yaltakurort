@@ -1,5 +1,7 @@
 .intro {
 
+  padding-top: 75px;
+
   &__border {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +48,19 @@
     &__header{
       min-height: 200px;
       margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width : 1080px) {
+    .intro {
+      padding-top: 120px;
+    }
+  }
+}
+
+@media only screen and (max-width : 750px) {
+  .intro {
+    &__sliderWrapper {
+      display: none;
     }
   }
 }

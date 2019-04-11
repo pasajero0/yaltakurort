@@ -1,0 +1,49 @@
+.infographics {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 240px;
+    margin: 20px 10px;
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+  }
+  &__textColor1 {
+    color: #a08856;
+  }
+  &__textColor2 {
+    color: #ff8980;
+  }
+  &__textColor3 {
+    color: #6caaaf;
+  }
+  &__textColor4 {
+    color: #00718a;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1098px) { 
+  .infographics { 
+    .container {
+      justify-content: space-between;
+      padding: 50px 160px;
+    }
+  }
+}
+
+@media only screen and (min-width: 835px) and (max-width: 960px) {
+  .infographics { 
+    .container {
+      justify-content: space-around;
+      padding: 50px 90px;
+    }
+  }
+}
