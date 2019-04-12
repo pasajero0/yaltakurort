@@ -7,7 +7,7 @@
   <link href="dist/fonts/Rockwell.ttc" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
@@ -624,13 +624,22 @@
   <section class="contactUs">
       <div class="container">
         <h1 class="contactUs__title">Свяжитесь с нами</h1>
-        <form name="mainForm" action="" onsubmit="return validateForm()" method="post" class="contactUs__form">
+        <form name="contactUsForm" action="/dist/php/mail.php" method="POST" class="contactUs__form">
           <div class="contactUs__inputsContainer">
-            <input type="text" name="name" placeholder="Имя" class="contactUs__input" required >
-            <input type="phone" name="phone" placeholder="Телефон" class="contactUs__input" required >
+            <div class="contactUs__field">
+              <input type="text" name="name" placeholder="Имя" class="contactUs__input" required >
+              <p id="nameErr" class="contactUs__fieldError"></p>
+            </div>
+            <div class="contactUs__field">
+              <input type="phone" name="phone" placeholder="Телефон" class="contactUs__input" required >
+              <p id="phoneErr" class="contactUs__fieldError"></p>
+            </div>
+          </div>
+          <div class="contactUs__field">
+            <input type="text" name="email" placeholder="E-mail" class="contactUs__input" required >
+            <p id="emailErr" class="contactUs__fieldError"></p>
           </div> 
-          <input type="text" name="email" placeholder="E-mail" class="contactUs__input" required >
-          <textarea name="" id="" placeholder="Ваше сообщение..." rows="5" class="contactUs__textarea"></textarea>
+          <textarea name="message" placeholder="Ваше сообщение..." rows="5" class="contactUs__textarea"></textarea>
           <div class="contactUs__buttonContainer">
             <button class="contactUs__button button">Отправить</button>
           </div> 
@@ -766,6 +775,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script type="text/javascript" src="dist/js/script.min.js"></script>
 </body>
 </html>

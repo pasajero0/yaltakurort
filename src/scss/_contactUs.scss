@@ -13,19 +13,34 @@
   }
 
   &__inputsContainer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    input {
-      width: 49%;
+    .contactUs__field {
+      width: 48.5%;
     }
+  }
 
+  &__field {
+    position: relative;
+  }
+
+  &__fieldError {
+    position: absolute;
+    color: $btnColor;
+    top: 65px;
+    left: 5px;
+    font-size: 16px;
   }
 
   &__input, &__textarea {
-    margin-bottom: 15px;
+    width: 100%;
+    // margin-bottom: 15px;
+    margin-bottom: 30px;
     box-sizing: border-box;
-    padding: 10px;
+    // padding: 10px;
+    padding: 20px;
     outline: none;
     border: 2px solid $mainColor;
     font-family: $main_font;
@@ -47,10 +62,9 @@
 @media only screen and (max-width: 600px){
   .contactUs {
     &__inputsContainer {
-      input {
+      .contactUs__field {
         width: 100%;
       }
-  
     }
   }
 }

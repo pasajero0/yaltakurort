@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcode1983/Leoforkio.git"
+    "url": "git+https://github.com/pasajero0/yaltakurort"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dcode1983/Leoforkio/issues"
+    "url": "https://github.com/pasajero0/yaltakurort/issues"
   },
-  "homepage": "https://github.com/dcode1983/Leoforkio#readme",
+  "homepage": "https://github.com/pasajero0/yaltakurort",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -29,6 +29,5 @@
     "gulp-sass": "^4.0.2",
     "gulp-sequence": "^1.0.0",
     "gulp-uglify": "^3.0.1"
-  },
-  "dependencies": {}
+  }
 }

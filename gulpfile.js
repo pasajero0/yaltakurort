@@ -28,6 +28,12 @@ gulp.task('minjs', () =>
   .pipe(gulp.dest('./dist/js'))
 )
 
+gulp.task('php', () =>
+ gulp.src('./src/php/**/*.php')
+  .pipe(concat('mail.php'))
+  .pipe(gulp.dest('./dist/php'))
+)
+
 gulp.task('sass', () =>
  gulp.src('./src/scss/*.scss')
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -51,7 +57,7 @@ gulp.task('imagemin', () =>
 	  .pipe(gulp.dest('./dist/img'))
 )
 
-gulp.task('makedist', ['sass', 'minjs', 'imagemin'], () => {
+gulp.task('makedist', ['sass', 'minjs', 'php', 'imagemin'], () => {
 	gulp.src('./src/fonts/*').pipe(gulp.dest('./dist/fonts'))
 
 })
