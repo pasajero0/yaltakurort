@@ -22,8 +22,6 @@ function slidesToShowFunc () {
 
 // window.onresize = slidesToShowFunc;
 
-
-
 $('.apartments__slider').slick({
   infinite: true,
   slidesToShow: slidesToShowFunc(),
@@ -33,4 +31,21 @@ $('.apartments__slider').slick({
   dots: true,
   prevArrow: '<i class="fas fa-arrow-left apartments__prevArrow"></i>',
   nextArrow: '<i class="fas fa-arrow-right apartments__nextArrow"></i>',
+});
+
+
+$('.intro__gallery').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.intro__galleryNav'
+});
+$('.intro__galleryNav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.intro__gallery',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
 });

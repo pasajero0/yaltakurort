@@ -20,6 +20,13 @@
     font-weight: 600;
   }
 
+  &__tableWrapper {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin: 0 60px 30px;
+  }
 }
 
 @media only screen and (max-width: 820px){

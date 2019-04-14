@@ -1,9 +1,9 @@
 
 // validation regExp
 
-const string = value => value && /^(([A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+[- ]{1}[A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+)|([A-Za-zА-Яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+))$/gim.test(value);
+// const string = value => value && /^(([A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+[- ]{1}[A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+)|([A-Za-zА-Яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+))$/gim.test(value);
 
-// const string = value => value && /^(([A-za-z]+[- ]{1}[A-za-z]+)|([A-Za-z]+))$/gim.test(value);
+const string = value => value && /^(([A-za-z]+[- ]{1}[A-za-z]+)|([A-Za-z]+))$/gim.test(value);
 
 const phone = value => value && /^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(([0-9]{0,11})?( [0-9]{3})?( [0-9]{3})?( [0-9]{2})?( [0-9]{2})?(\([0-9]{3})?(\)[0-9]{3})?([-]{0,1})?([0-9]{0,2})?([-]{0,1})?([0-9]{0,2})?( [0-9]{2})?( [0-9]{2})?(\+[0-9]{1,11})?( [0-9]{3})?( [0-9]{3})?( [0-9]{2})?( [0-9]{2})?(\([0-9]{3})?(\)[0-9]{3})?([-]{0,1})?([0-9]{0,2})?([-]{0,1})?([0-9]{0,2})?( [0-9]{2})?( [0-9]{2})?)$/gim.test(value);
 
@@ -53,77 +53,35 @@ $(document).ready(function() {
 
         const bodyFormData = $(this).serialize()
 
-        console.log(bodyFormData);
         $.ajax({
             type: 'POST',
             cache: false,
             url: $(this).attr('action'),
-            data: $(this).serialize(), 
+            data: bodyFormData, 
             success: function(res, status, xhr) {
               console.log('======> ', res, 'Сообщение успешно отправленно!');
               console.log(xhr, status, res);
+
+              $('.systemMessage').addClass('systemMessage__isVisible');
+              $('.systemMessage__text').text('Сообщение было успешно отправленно!');
               $('.contactUs__input').val('');
             },
             error: function (xhr, status, err) {
               console.log('======> ', err, 'Ошибка отправки!');
               console.log(xhr, status, err);
+
+              $('.systemMessage').addClass('systemMessage__isVisible');
+              $('.systemMessage__text').text('Произошла ошибка!');
             }
           });
           
         }
-      });     
+      }); 
+      
+      $('.systemMessage__cross').click(function(){
+        $('.systemMessage').removeClass('systemMessage__isVisible');
+        $('.systemMessage__text').text('');
+      });
+      
     });
     
-    
-    
-    // axios({
-    //   method: 'post',
-    //   url: 'dist/php/mail.php',
-    //   data: bodyFormData,
-    //   config: { headers: {'Content-Type': 'multipart/form-data' }}
-    // })
-    //   .then(function (res) {
-    //       //handle success
-    //       console.log('response ===>', res);
-    //   })
-    //   .catch(function (res) {
-    //       //handle error
-    //       console.log('response ===>', res);
-    //   });
-  
-          // $.ajax({
-          //   type: 'POST',
-          //   cache: false,
-          //   global: true,
-          //   traditional: true,
-          //   url: $(this).attr('action'),
-          //   data: $(this).serialize(), 
-          //   success: function(msg) {
-          //     // $("#boxContentId").html(msg);
-          //     console.log(msg);
-          //     $('.contactUs__input').val('');
-          //   }
-          // });
-  
-          // $.post('mail.php', $(this).serialize(), function(res, status){
-          //   // Do something with the response `res`
-          //   console.log(res, status);
-          //   // Don't forget to hide the loading indicator!
-          // });
-
-
-
-
-// $('form[name=contactUsForm]').submit(function(){
-
-//   // Maybe show a loading indicator...
-
-//   $.post($(this).attr('action'), $(this).serialize(), function(res){
-//       // Do something with the response `res`
-//       console.log(res);
-//       // Don't forget to hide the loading indicator!
-//   });
-
-//   return false; // prevent default action
-
-// });

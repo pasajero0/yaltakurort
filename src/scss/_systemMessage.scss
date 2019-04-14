@@ -1,0 +1,53 @@
+
+.systemMessage {
+
+  @keyframes slideInDown {
+    from {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -1000px;
+  left: 0;
+  right: 0;
+  background: #00000080;
+  z-index: 999;
+
+  &__block {
+    position: relative;
+    width: 310px;
+    padding: 35px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 2px;
+  }
+  &__cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &__text {
+    text-align: center;
+  }
+
+  &__isVisible {
+    top: 0;
+    bottom: 0;
+    .systemMessage__block {
+      animation-name: slideInDown;
+    }
+  }
+}

@@ -1,6 +1,10 @@
 .intro {
 
   padding-top: 75px;
+  
+  &__title {
+    margin-bottom: 50px;
+  }
 
   &__border {
     display: flex;
@@ -32,6 +36,30 @@
     }
   }
   
+  &__gallery {
+    width: 100%;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__galleryNav {
+    width: 100%;
+    .slick-slide {
+      outline: none;
+    }
+    img {
+      margin: 0 auto;
+      height: 200px;
+    }
+  }
+
+  .roomIntroContainer {
+    padding-bottom: 0;
+  }
+
   // &__slide {
   //   overflow: hidden;
   //   img {
@@ -42,6 +70,7 @@
 
 @media only screen and (max-width: 1156px) {
   .intro {
+
     &__border {
       justify-content: center;
     }
