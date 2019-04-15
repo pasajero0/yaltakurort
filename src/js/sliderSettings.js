@@ -48,4 +48,6 @@ $('.intro__galleryNav').slick({
   dots: true,
   centerMode: true,
   focusOnSelect: true,
+  prevArrow: '<i class="fas fa-arrow-left intro__prevArrow"></i>',
+  nextArrow: '<i class="fas fa-arrow-right intro__nextArrow"></i>',
 });

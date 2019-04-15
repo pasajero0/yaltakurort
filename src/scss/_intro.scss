@@ -1,7 +1,24 @@
 .intro {
 
   padding-top: 75px;
-  
+
+  &__panorama {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    
+    // height: 400px;
+    // height: 92vh;
+    // background-image: url(../img/embankment.jpg);
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+  }
+
   &__title {
     margin-bottom: 50px;
   }
@@ -27,7 +44,16 @@
   }
 
   &__headerLogo {
+    // width: 250px;
+
     width: 250px;
+    position: absolute;
+    bottom: -25px;
+    left: 17%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px;
+    padding: 15px;
   }
 
   &__sliderWrapper {
@@ -47,12 +73,38 @@
 
   &__galleryNav {
     width: 100%;
+    margin-bottom: 50px !important;
     .slick-slide {
       outline: none;
     }
     img {
       margin: 0 auto;
-      height: 200px;
+      max-height: 200px;
+    }
+    .intro__prevArrow, .intro__nextArrow {
+      position: absolute;
+      display: block;
+      height: 20px;
+      width: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      background: transparent;
+      color: #ff8980;
+      top: 50%;
+      transform: translate(0, -50%);
+      padding: 0;
+      border: none;
+      outline: none;
+      transition: .3s;
+    }
+    .intro__prevArrow {
+      left: -25px;
+    }
+    .intro__nextArrow {
+      right: -25px;
+    }
+    .slick-dots {
+      bottom: -45px;
     }
   }
 
@@ -68,6 +120,19 @@
   // }
 }
 
+@media only screen and (max-width: 1166px) {
+  .intro__galleryNav {
+    .slick-list.draggable {
+      display: none;
+    }
+    .intro__prevArrow {
+      left: 0;
+    }
+    .intro__nextArrow {
+      right: 0;
+    }
+  }
+}
 @media only screen and (max-width: 1156px) {
   .intro {
 
