@@ -5,11 +5,10 @@
   &__table {
     vertical-align: middle;
     margin: 0 auto;
-    // box-shadow: 0 0 15px -5px;
     background: $tableColor;
     td {
       border: 2px solid #fff;
-      padding: 5px;
+      padding: 5px 25px;
     }
     .western {
       text-align: center;
@@ -27,12 +26,40 @@
   &__text {
     margin: 0 60px 30px;
   }
+  &__info {
+    margin: 20px 60px 0;
+    text-align: center;
+    font-size: 15px;
+  }
 }
 
-@media only screen and (max-width: 820px){
+@media only screen and (max-width: 975px){
+  .price {
+    &__table {
+      td {
+        padding: 5px 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 809px){
+  .price {
+    &__table {
+      td {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px){
   .price {
     &__tableWrapper {
       overflow-x: scroll;
+    }
+    &__text {
+      margin: 0 10px 30px;
     }
   }
 }

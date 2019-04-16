@@ -9,6 +9,11 @@
     img {
       width: 100%;
     }
+
+    .container {
+      padding: 0;
+      position: relative;
+    }
     
     // height: 400px;
     // height: 92vh;
@@ -46,10 +51,12 @@
   &__headerLogo {
     // width: 250px;
 
-    width: 250px;
+    width: 200px;
     position: absolute;
+
     bottom: -25px;
-    left: 17%;
+    left: 70px;
+
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 20px 5px;
