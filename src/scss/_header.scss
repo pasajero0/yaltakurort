@@ -19,7 +19,7 @@
   }
   &__phone, &__location{
     color: $textColor;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
   }
   &__svg {
@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    min-width: 435px;
+    min-width: 355px;
   }
 }
 

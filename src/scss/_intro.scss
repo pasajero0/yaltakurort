@@ -3,9 +3,9 @@
   padding-top: 75px;
 
   &__panorama {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    // position: relative;
+    // width: 100%;
+    // overflow: hidden;
     img {
       width: 100%;
     }
@@ -14,14 +14,13 @@
       padding: 0;
       position: relative;
     }
-    
-    // height: 400px;
-    // height: 92vh;
-    // background-image: url(../img/embankment.jpg);
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-size: cover;
+
+    height: 66vh;
+    background-image: url(https://gkd.ru/assets/i/ai/4/4/1/i/2986161.jpg);
+    background-position: bottom 100px right 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   &__title {
@@ -52,15 +51,16 @@
     // width: 250px;
 
     width: 200px;
-    position: absolute;
+    
+    // position: absolute;
 
-    bottom: -25px;
-    left: 70px;
+    // bottom: -25px;
+    // left: 70px;
 
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 20px 5px;
-    padding: 15px;
+    // background: #fff;
+    // border-radius: 5px;
+    // box-shadow: 0 0 20px 5px;
+    // padding: 15px;
   }
 
   &__sliderWrapper {
