@@ -136,7 +136,11 @@
 @media only screen and (max-width : 400px) {
   .intro {
     &__border {
+      padding: 0;
       border: none;
+    }
+    .roomIntroContainer {
+      padding: 50px 0 0;
     }
     &__header{
       .mainTitle {
