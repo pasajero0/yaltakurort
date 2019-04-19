@@ -34,20 +34,31 @@ $('.apartments__slider').slick({
 });
 
 
+// $('.intro__gallery').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.intro__galleryNav'
+// });
+
+// $('.intro__galleryNav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.intro__gallery',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true,
+//   prevArrow: '<i class="fas fa-arrow-left intro__prevArrow"></i>',
+//   nextArrow: '<i class="fas fa-arrow-right intro__nextArrow"></i>',
+// });
+
 $('.intro__gallery').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.intro__galleryNav'
-});
-$('.intro__galleryNav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.intro__gallery',
+  autoplay: true,
+  autoplaySpeed: 4000,
   dots: true,
-  centerMode: true,
-  focusOnSelect: true,
   prevArrow: '<i class="fas fa-arrow-left intro__prevArrow"></i>',
   nextArrow: '<i class="fas fa-arrow-right intro__nextArrow"></i>',
 });

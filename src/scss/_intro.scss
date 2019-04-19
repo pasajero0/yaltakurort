@@ -3,9 +3,13 @@
   padding-top: 75px;
 
   &__panorama {
-    // position: relative;
-    // width: 100%;
-    // overflow: hidden;
+    height: 60vh;
+    background-image: url(https://gkd.ru/assets/i/ai/4/4/1/i/2986161.jpg);
+    background-position: bottom 100px right 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
     img {
       width: 100%;
     }
@@ -15,12 +19,6 @@
       position: relative;
     }
 
-    height: 66vh;
-    background-image: url(https://gkd.ru/assets/i/ai/4/4/1/i/2986161.jpg);
-    background-position: bottom 100px right 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
   }
 
   &__title {
@@ -50,7 +48,7 @@
   &__headerLogo {
     // width: 250px;
 
-    width: 200px;
+    // width: 200px;
     
     // position: absolute;
 
@@ -61,6 +59,9 @@
     // border-radius: 5px;
     // box-shadow: 0 0 20px 5px;
     // padding: 15px;
+    .mainTitle__span {
+      font-size: 70px;
+    }
   }
 
   &__sliderWrapper {
@@ -69,16 +70,16 @@
     }
   }
   
+  // &__gallery {
+  //   width: 100%;
+  //   margin-bottom: 30px;
+
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
+
   &__gallery {
-    width: 100%;
-    margin-bottom: 30px;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  &__galleryNav {
     width: 100%;
     margin-bottom: 50px !important;
     .slick-slide {
@@ -86,7 +87,8 @@
     }
     img {
       margin: 0 auto;
-      max-height: 200px;
+      width: 100%;
+      max-height: 700px;
     }
     .intro__prevArrow, .intro__nextArrow {
       position: absolute;
@@ -104,11 +106,16 @@
       outline: none;
       transition: .3s;
     }
+    .intro__prevArrow:hover, .intro__nextArrow:hover {
+        color: #d85f49;
+    }
     .intro__prevArrow {
-      left: -25px;
+      // left: -25px;
+      left: -38px;
     }
     .intro__nextArrow {
-      right: -25px;
+      // right: -25px;
+      right: -38px;
     }
     .slick-dots {
       bottom: -45px;

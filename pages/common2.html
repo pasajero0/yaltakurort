@@ -22,10 +22,12 @@
       <p class="systemMessage__text"></p>
     </div>
   </section>
+
+  
   <header class="header">
     <div class="container">
       <div class="header__phones">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="header__svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="header__icon">
           <defs>
             <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
           </defs>
@@ -47,27 +49,38 @@
           <a href="tel:+73652230069" class="header__phone">+7 (3652) 23 00 69</a>
         </div>
       </div>
-      <a href="https://yandex.ru/maps/-/CCBsbF17" class="header__location">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="header__svg">
-          <defs>
-            <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
-          </defs>
-          <title>location small</title>
-          <g id="Слой_2" data-name="Слой 2">
-            <g id="Подвал">
-              <g id="локация">
-                <circle class="cls-1" cx="14.66" cy="14.66" r="14.66"/>
-                <path class="cls-2" d="M14.72,9.67A2.28,2.28,0,1,0,17,11.94,2.27,2.27,0,0,0,14.72,9.67Zm0,3.9a1.63,1.63,0,1,1,1.63-1.63A1.63,1.63,0,0,1,14.72,13.57Z"/>
-                <path class="cls-2" d="M19.07,7.59a6.24,6.24,0,0,0-8.81,0,7.1,7.1,0,0,0-.59,8.76l5,7.21,5-7.2A7.1,7.1,0,0,0,19.07,7.59ZM19.12,16l-4.46,6.44L10.2,16a6.41,6.41,0,0,1,.52-7.92,5.59,5.59,0,0,1,7.89,0A6.41,6.41,0,0,1,19.12,16Z"/>
+
+      <div class="header__location">
+        <div class="header__locationMenu header__icon">
+          <div class="header__locationMenuMainBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="toggleBtn menuBtn">
+              <defs>
+                <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
+              </defs>
+              <title>location small</title>
+              <g id="Слой_2" data-name="Слой 2">
+                <g id="Подвал">
+                  <g id="локация">
+                    <circle class="cls-1" cx="14.66" cy="14.66" r="14.66"/>
+                    <path class="cls-2" d="M14.72,9.67A2.28,2.28,0,1,0,17,11.94,2.27,2.27,0,0,0,14.72,9.67Zm0,3.9a1.63,1.63,0,1,1,1.63-1.63A1.63,1.63,0,0,1,14.72,13.57Z"/>
+                    <path class="cls-2" d="M19.07,7.59a6.24,6.24,0,0,0-8.81,0,7.1,7.1,0,0,0-.59,8.76l5,7.21,5-7.2A7.1,7.1,0,0,0,19.07,7.59ZM19.12,16l-4.46,6.44L10.2,16a6.41,6.41,0,0,1,.52-7.92,5.59,5.59,0,0,1,7.89,0A6.41,6.41,0,0,1,19.12,16Z"/>
+                  </g>
+                </g>
               </g>
-            </g>
-          </g>
-        </svg>
+            </svg>
+          </div>
+          <a href="https://goo.gl/maps/tfzeC4uPyWBqqNH66" class="header__locationMenuBtn">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://yandex.ru/maps/-/CCFV72Mn" class="header__locationMenuBtn">
+            <i class="fab fa-yandex"></i>
+          </a>
+        </div>
         <div class="header__phoneAddressWrapper">
           <span><span class="invisibleAfter500">г. Ялта. </span>ул. Ленина, 21 /</span>
           <span>ул. Морская, 1</span>
         </div>
-      </a>
+      </div>
     </div>
   </header>
 
@@ -78,16 +91,7 @@
         <div class="intro__gallery">
             <div><img src="../dist/img/600_6219.jpg" alt="img"></div>
             <div><img src="../dist/img/600_6220.jpg" alt="img"></div>
-            <div><img src="../dist/img/600_6222.jpg" alt="img"></div>
-            <div><img src="../dist/img/600_6227.jpg" alt="img"></div>
           </div>
-          <div class="intro__galleryNav">
-            <div><img src="../dist/img/600_6219.jpg" alt="img"></div>
-            <div><img src="../dist/img/600_6220.jpg" alt="img"></div>
-            <div><img src="../dist/img/600_6222.jpg" alt="img"></div>
-            <div><img src="../dist/img/600_6227.jpg" alt="img"></div>
-          </div>  
-      </div>
     </div>
   </section>
 
@@ -441,7 +445,7 @@
 
         <div class="apartments__slide">
           <div class="apartments__slideImg">
-            <img src="../dist/img/600_6137.jpg" alt="2 местный «улучшенный»"/>
+            <img src="../dist/img/600_8868.jpg" alt="2 местный «улучшенный»"/>
           </div>
           <h3 class="apartments__slideTitle">2 местный «улучшенный»</h3>
           <p class="apartments__slideText">лучший номер для Вашего комфортного пребывания</p>

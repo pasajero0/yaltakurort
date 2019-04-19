@@ -59,8 +59,6 @@ const roomDatePrice = {
 const today = moment();
 const year = today.format('YYYY');
 
-console.log(today.format("DD MM YYYY"));
-
 const setPrice = (obj) => {
   
   const bgColor = '#d85f49';
@@ -117,3 +115,4 @@ const setPrice = (obj) => {
 }
 
 setPrice(roomDatePrice);
+
