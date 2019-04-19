@@ -58,7 +58,6 @@
   }
   &__slideImg {
     width: 100%;
-    // min-height: 200px;
     height: 200px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -77,9 +76,24 @@
     font-size: 17px;
     margin-bottom: 25px;
     text-align: center;
+    display: none;
   }
   &__slidePrice {
     font-size: 21px;
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .apartments__slideImg {
+    height: inherit;
+  }
+}
+
+@media only screen and (max-width: 335px){
+  .apartments__slider {
+    .button {
+      width: 200px
+    }
   }
 }

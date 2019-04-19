@@ -16,6 +16,7 @@
   }
 
   &__trTitle {
+    color: $textColor;
     font-weight: 600;
   }
 
@@ -60,6 +61,9 @@
     }
     &__text {
       margin: 0 10px 30px;
+    }
+    &__info {
+      margin: 0;
     }
   }
 }
