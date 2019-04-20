@@ -75,8 +75,8 @@ section .container {
 }
 
 .scrollToTop {
-	width: 45px;
-	height: 45px;
+	width: 35px;
+	height: 35px;
 	position: fixed;
 	bottom: 80px;
 	right: -100px;
@@ -84,7 +84,7 @@ section .container {
 	justify-content: center;
 	align-items: center;
 	background: #fff;
-	font-size: 50px;
+	font-size: 40px;
 	color: $btnColor;
 	border-radius: 100px;
 	cursor: pointer;
