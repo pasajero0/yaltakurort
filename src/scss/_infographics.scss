@@ -47,3 +47,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 577px) {
+  .infographics { 
+    &__item {
+      width: 100px;
+    }
+    &__img {
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media only screen and (min-width: 417px) and (max-width: 538px) {
+  .infographics { 
+    .container {
+      justify-content: space-between;
+      padding: 50px 80px;
+    }
+  }
+}

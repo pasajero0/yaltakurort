@@ -41,6 +41,12 @@
     }
   }
 
+  &__emblem {
+    img {
+      height: 200px;
+    }
+  }
+
   &__sliderWrapper {
     img {
       height: 450px;
@@ -114,20 +120,27 @@
       justify-content: center;
     }
     &__header{
-      min-height: 400px;
+      height: 400px;
       margin-bottom: 30px;
     }
   }
   @media only screen and (max-width : 1080px) {
     .intro {
-      padding-top: 120px;
+      padding-top: 40px;
     }
   }
 }
 
 @media only screen and (max-width : 750px) {
   .intro {
+    &__header{
+      height: 250px;
+      margin-bottom: 0;
+    }
     &__sliderWrapper {
+      display: none;
+    }
+    &__emblem {
       display: none;
     }
   }
@@ -138,6 +151,9 @@
     &__border {
       padding: 0;
       border: none;
+    }
+    &__header{
+      height: 200px;
     }
     .roomIntroContainer {
       padding: 50px 0 0;

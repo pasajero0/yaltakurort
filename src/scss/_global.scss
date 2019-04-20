@@ -74,6 +74,23 @@ section .container {
 	}
 }
 
+.scrollToTop {
+	width: 55px;
+	height: 55px;
+	position: fixed;
+	bottom: 80px;
+	right: -100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	font-size: 60px;
+	color: $btnColor;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: .3s;
+	z-index: 999;
+}
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @media only screen and (max-width: 400px) {}

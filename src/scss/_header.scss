@@ -4,7 +4,7 @@
   background: $mainColor;
   z-index: 99;
   box-shadow: 0px -3px 15px 0;
-
+  transition: all 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44);
 
   &__locationMenu {
     position: relative;
@@ -40,7 +40,7 @@
   }
   &__locationMenuBtn:not(:first-child) {
     opacity: 0;
-    z-index: -2;
+    z-index: 9;
     transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44);
   }
   &__locationMenuBtn:nth-child(2) {top:0px;left:0px;transition-delay: 0s}
@@ -53,6 +53,70 @@
   &__locationMenuBtn_isVisible:nth-child(3) {
     top:65px; left:35px;opacity:1;
   }
+  &__blind {
+    display: none;
+    width: 300px;
+    height: 170px;
+    background: $mainColor;
+    position: absolute;
+    z-index: 9;
+  }
+  &__showClose {
+    width: 200px;
+    height: 200px;
+    background: $mainColor;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    bottom: -60px;
+    border-radius: 50%;
+    box-shadow: 0px -2px 15px 0;
+    z-index: 8;
+  }
+  &__showCloseBtn {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+  }
+  &__showCloseBtnSpan {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  &__showCloseBtnSpan1 {top:0;}
+  &__showCloseBtnSpan2, &__showCloseBtnSpan3 {top:12px;}
+  &__showCloseBtnSpan4 {top:24px;}
+
+  &__showCloseBtn.isOpen &__showCloseBtnSpan1{
+    top: 12px;
+    width: 0%;
+    left: 50%;
+  }
+  &__showCloseBtn.isOpen &__showCloseBtnSpan2{
+    transform: rotate(45deg);
+  } 
+  &__showCloseBtn.isOpen &__showCloseBtnSpan3{
+    transform: rotate(-45deg);
+  } 
+  &__showCloseBtn.isOpen &__showCloseBtnSpan4{
+    top: 12px;
+    width: 0%;
+    left: 50%;
+  }  
 
 
   .container {
@@ -66,6 +130,7 @@
   &__phones, &__location {
     display: inline-flex;
     align-items: center;
+    z-index: 10;
   }
   &__phone, &__location{
     color: $textColor;
@@ -78,6 +143,7 @@
   &__icon {
     min-width: 45px;
     padding-right: 25px;
+    z-index: 11;
   }
   &__phoneAddressWrapper {
     display: flex;
@@ -90,10 +156,21 @@
 
 @media only screen and (max-width : 1080px) {  
   .header {
+    top: -185px;
+    &__showClose {
+      display: flex;
+    }
+    &__blind {
+      display: block;
+    }
+    &__isVisible {
+      top: -15px;
+    }
+
     .container {
       flex-direction: column;
       justify-content: center;
-      padding: 3px 20px;
+      padding: 40px 20px 30px;
     }
     &__icon {
       padding-right: 10px;
@@ -102,7 +179,7 @@
       margin-right: 0;
     }
     &__phones {
-      margin-bottom: 5px;
+      margin-bottom: 20px;
     }
   }
   @media only screen and (max-width : 550px) {  
@@ -124,12 +201,20 @@
     display: none;
   }
   .header {
+    top: -195px;
+
+    &__isVisible {
+      top: -15px;
+    }
     &__phoneAddressWrapper {
       flex-direction: column;
       min-width: 180px;
     }
     &__location, &__phone {
      line-height: 25px;
+    }
+    &__blind {
+      height: 180px;
     }
   }
 }

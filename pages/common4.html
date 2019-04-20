@@ -18,74 +18,90 @@
 </head>
 
 <body>
+
   <section class="systemMessage">
     <div class="systemMessage__block">
-        <i class="fas fa-times systemMessage__cross"></i>
+      <i class="fas fa-times systemMessage__cross"></i>
       <p class="systemMessage__text"></p>
     </div>
   </section>
 
+  <div class="scrollToTop">
+    <i class="fas fa-chevron-circle-up scrollToTop__chevronUp"></i>
+  </div>
 
   <header class="header">
-    <div class="container">
-      <div class="header__phones">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="header__icon">
-          <defs>
-            <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
-          </defs>
-          <title>phone small</title>
-          <g id="Слой_2" data-name="Слой 2">
-            <g id="Подвал">
-              <g id="телефон">
-                <circle class="cls-1" cx="14.66" cy="14.66" r="14.66"/>
-                <path class="cls-2" d="M22,18.89l-3.15-2.1a.91.91,0,0,0-1.23.2l-.92,1.18a.39.39,0,0,1-.5.1l-.18-.09A10.66,10.66,0,0,1,13.31,16a10.66,10.66,0,0,1-2.16-2.75l-.1-.18a.39.39,0,0,1,.11-.5l1.18-.92a.92.92,0,0,0,.2-1.23l-2.1-3.15A.92.92,0,0,0,9.2,7L7.89,7.8A1.87,1.87,0,0,0,7,8.9c-.48,1.73-.12,4.72,4.28,9.11,3.49,3.5,6.1,4.44,7.89,4.44a4.59,4.59,0,0,0,1.22-.16,1.87,1.87,0,0,0,1.1-.85l.79-1.32A.91.91,0,0,0,22,18.89Zm-.17,1-.79,1.32a1.38,1.38,0,0,1-.79.61c-1.6.44-4.39.07-8.61-4.15S7.1,10.64,7.54,9a1.31,1.31,0,0,1,.61-.79l1.32-.79a.4.4,0,0,1,.54.12l1.14,1.71,1,1.44a.4.4,0,0,1-.09.53l-1.18.92a.91.91,0,0,0-.24,1.17l.09.17a11.34,11.34,0,0,0,2.25,2.87,11,11,0,0,0,2.87,2.24l.17.1a.91.91,0,0,0,1.17-.24l.91-1.18a.41.41,0,0,1,.54-.09l3.15,2.1A.4.4,0,0,1,21.87,19.86Z"/>
-                <path class="cls-2" d="M15.7,9.47a4.42,4.42,0,0,1,4.41,4.42.26.26,0,0,0,.26.26.26.26,0,0,0,.26-.26A4.93,4.93,0,0,0,15.7,9a.26.26,0,1,0,0,.51Z"/>
-                <path class="cls-2" d="M15.7,11a2.87,2.87,0,0,1,2.86,2.86.26.26,0,1,0,.51,0,3.37,3.37,0,0,0-3.37-3.38.26.26,0,0,0-.26.26A.26.26,0,0,0,15.7,11Z"/>
-                <path class="cls-2" d="M15.7,12.59a1.3,1.3,0,0,1,1.3,1.3.26.26,0,0,0,.26.26.26.26,0,0,0,.26-.26,1.82,1.82,0,0,0-1.82-1.82.26.26,0,0,0,0,.52Z"/>
-              </g>
-            </g>
-          </g>
-        </svg>
-        <div class="header__phoneAddressWrapper">
-          <a href="tel:+79789727170" class="header__phone">+7 (978) 972 71 70</a>
-          <a href="tel:+73652230069" class="header__phone">+7 (3652) 23 00 69</a>
-        </div>
-      </div>
-
-      <div class="header__location">
-        <div class="header__locationMenu header__icon">
-          <div class="header__locationMenuMainBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="toggleBtn menuBtn">
-              <defs>
-                <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
-              </defs>
-              <title>location small</title>
-              <g id="Слой_2" data-name="Слой 2">
-                <g id="Подвал">
-                  <g id="локация">
-                    <circle class="cls-1" cx="14.66" cy="14.66" r="14.66"/>
-                    <path class="cls-2" d="M14.72,9.67A2.28,2.28,0,1,0,17,11.94,2.27,2.27,0,0,0,14.72,9.67Zm0,3.9a1.63,1.63,0,1,1,1.63-1.63A1.63,1.63,0,0,1,14.72,13.57Z"/>
-                    <path class="cls-2" d="M19.07,7.59a6.24,6.24,0,0,0-8.81,0,7.1,7.1,0,0,0-.59,8.76l5,7.21,5-7.2A7.1,7.1,0,0,0,19.07,7.59ZM19.12,16l-4.46,6.44L10.2,16a6.41,6.41,0,0,1,.52-7.92,5.59,5.59,0,0,1,7.89,0A6.41,6.41,0,0,1,19.12,16Z"/>
-                  </g>
+      <div class="container">
+  
+        <div class="header__phones">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="header__icon">
+            <defs>
+              <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
+            </defs>
+            <title>phone small</title>
+            <g id="Слой_2" data-name="Слой 2">
+              <g id="Подвал">
+                <g id="телефон">
+                  <circle class="cls-1" cx="14.66" cy="14.66" r="14.66"/>
+                  <path class="cls-2" d="M22,18.89l-3.15-2.1a.91.91,0,0,0-1.23.2l-.92,1.18a.39.39,0,0,1-.5.1l-.18-.09A10.66,10.66,0,0,1,13.31,16a10.66,10.66,0,0,1-2.16-2.75l-.1-.18a.39.39,0,0,1,.11-.5l1.18-.92a.92.92,0,0,0,.2-1.23l-2.1-3.15A.92.92,0,0,0,9.2,7L7.89,7.8A1.87,1.87,0,0,0,7,8.9c-.48,1.73-.12,4.72,4.28,9.11,3.49,3.5,6.1,4.44,7.89,4.44a4.59,4.59,0,0,0,1.22-.16,1.87,1.87,0,0,0,1.1-.85l.79-1.32A.91.91,0,0,0,22,18.89Zm-.17,1-.79,1.32a1.38,1.38,0,0,1-.79.61c-1.6.44-4.39.07-8.61-4.15S7.1,10.64,7.54,9a1.31,1.31,0,0,1,.61-.79l1.32-.79a.4.4,0,0,1,.54.12l1.14,1.71,1,1.44a.4.4,0,0,1-.09.53l-1.18.92a.91.91,0,0,0-.24,1.17l.09.17a11.34,11.34,0,0,0,2.25,2.87,11,11,0,0,0,2.87,2.24l.17.1a.91.91,0,0,0,1.17-.24l.91-1.18a.41.41,0,0,1,.54-.09l3.15,2.1A.4.4,0,0,1,21.87,19.86Z"/>
+                  <path class="cls-2" d="M15.7,9.47a4.42,4.42,0,0,1,4.41,4.42.26.26,0,0,0,.26.26.26.26,0,0,0,.26-.26A4.93,4.93,0,0,0,15.7,9a.26.26,0,1,0,0,.51Z"/>
+                  <path class="cls-2" d="M15.7,11a2.87,2.87,0,0,1,2.86,2.86.26.26,0,1,0,.51,0,3.37,3.37,0,0,0-3.37-3.38.26.26,0,0,0-.26.26A.26.26,0,0,0,15.7,11Z"/>
+                  <path class="cls-2" d="M15.7,12.59a1.3,1.3,0,0,1,1.3,1.3.26.26,0,0,0,.26.26.26.26,0,0,0,.26-.26,1.82,1.82,0,0,0-1.82-1.82.26.26,0,0,0,0,.52Z"/>
                 </g>
               </g>
-            </svg>
+            </g>
+          </svg>
+          <div class="header__phoneAddressWrapper">
+            <a href="tel:+79789727170" class="header__phone">+7 (978) 972 71 70</a>
+            <a href="tel:+73652230069" class="header__phone">+7 (3652) 23 00 69</a>
           </div>
-          <a href="https://goo.gl/maps/ixPJKwAktiw3uZMM8" class="header__locationMenuBtn">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="https://yandex.ru/maps/-/CCRQICzi" class="header__locationMenuBtn">
-            <i class="fab fa-yandex"></i>
-          </a>
         </div>
-        <div class="header__phoneAddressWrapper">
-          <span><span class="invisibleAfter500">г. Ялта. </span>ул. Ленина, 21 /</span>
-          <span>ул. Морская, 1</span>
+  
+        <div class="header__location">
+          <div class="header__locationMenu header__icon">
+            <div class="header__locationMenuMainBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 29.33" class="toggleBtn menuBtn">
+                <defs>
+                  <style>.cls-1{fill:#d85f49;}.cls-2{fill:#fff;stroke:#fff;stroke-width:0.5px;}</style>
+                </defs>
+                <title>location small</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Подвал">
+                    <g id="локация">
+                      <circle class="cls-1" cx="14.66" cy="14.66" r="14.66"/>
+                      <path class="cls-2" d="M14.72,9.67A2.28,2.28,0,1,0,17,11.94,2.27,2.27,0,0,0,14.72,9.67Zm0,3.9a1.63,1.63,0,1,1,1.63-1.63A1.63,1.63,0,0,1,14.72,13.57Z"/>
+                      <path class="cls-2" d="M19.07,7.59a6.24,6.24,0,0,0-8.81,0,7.1,7.1,0,0,0-.59,8.76l5,7.21,5-7.2A7.1,7.1,0,0,0,19.07,7.59ZM19.12,16l-4.46,6.44L10.2,16a6.41,6.41,0,0,1,.52-7.92,5.59,5.59,0,0,1,7.89,0A6.41,6.41,0,0,1,19.12,16Z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <a href="https://goo.gl/maps/ixPJKwAktiw3uZMM8" class="header__locationMenuBtn">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="https://yandex.ru/maps/-/CCRQICzi" class="header__locationMenuBtn">
+              <i class="fab fa-yandex"></i>
+            </a>
+          </div>
+          <div class="header__phoneAddressWrapper">
+            <span><span class="invisibleAfter500">г. Ялта. </span>ул. Ленина, 21 /</span>
+            <span>ул. Морская, 1</span>
+          </div>
         </div>
+  
+        <div class="header__blind"></div>
+  
+        <div class="header__showClose">
+          <div class="header__showCloseBtn">
+            <span class="header__showCloseBtnSpan header__showCloseBtnSpan1"></span>
+            <span class="header__showCloseBtnSpan header__showCloseBtnSpan2"></span>
+            <span class="header__showCloseBtnSpan header__showCloseBtnSpan3"></span>
+            <span class="header__showCloseBtnSpan header__showCloseBtnSpan4"></span>
+          </div>
+        </div>
+  
       </div>
-    </div>
-  </header>
-
+    </header>
   <section class="intro">
     <div class="container roomIntroContainer">
       <a href="../index.html" class="intro__mainTitle mainTitle"><span class="mainTitle__span">хостел</span> «Ялтакурорт»</a>
@@ -586,7 +602,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="/">
+              <a href="../index.html">
                 <h2 class="mainTitle"><span class="mainTitle__span">хостел</span> «Ялтакурорт»</h2>
               </a>
             </div>
