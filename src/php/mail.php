@@ -7,9 +7,8 @@ if (!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['phone'
 	$phone = $_POST['phone'];
 	$message = $_POST['message'];
 
-	// hostelyalta@mail.ru 
-	$to = "leomalinovsky@gmail.com";
-	$letter = 'хостел "Ялтакурорт"<br/><br/>
+	$to = "hostelyalta@mail.ru ";
+	$letter = 'Сообщение с сайта<br/><br/>
 	Имя: '.htmlspecialchars($name).'<br/>
 	Телефон: '.htmlspecialchars($phone).'<br/>
 	Email: '.htmlspecialchars($email).'<br/><br/>

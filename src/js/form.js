@@ -1,9 +1,9 @@
 
 // validation regExp
 
-// const string = value => value && /^(([A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+[- ]{1}[A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+)|([A-Za-zА-Яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+))$/gim.test(value);
+const string = value => value && /^(([A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+[- ]{1}[A-za-zА-яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+)|([A-Za-zА-Яа-яàâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+))$/gim.test(value);
 
-const string = value => value && /^(([A-za-z]+[- ]{1}[A-za-z]+)|([A-Za-z]+))$/gim.test(value);
+// const string = value => value && /^(([A-za-z]+[- ]{1}[A-za-z]+)|([A-Za-z]+))$/gim.test(value);
 
 const phone = value => value && /^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(([0-9]{0,11})?( [0-9]{3})?( [0-9]{3})?( [0-9]{2})?( [0-9]{2})?(\([0-9]{3})?(\)[0-9]{3})?([-]{0,1})?([0-9]{0,2})?([-]{0,1})?([0-9]{0,2})?( [0-9]{2})?( [0-9]{2})?(\+[0-9]{1,11})?( [0-9]{3})?( [0-9]{3})?( [0-9]{2})?( [0-9]{2})?(\([0-9]{3})?(\)[0-9]{3})?([-]{0,1})?([0-9]{0,2})?([-]{0,1})?([0-9]{0,2})?( [0-9]{2})?( [0-9]{2})?)$/gim.test(value);
 
@@ -59,17 +59,13 @@ $(document).ready(function() {
             url: $(this).attr('action'),
             data: bodyFormData, 
             success: function(res, status, xhr) {
-              console.log('======> ', res, 'Сообщение успешно отправленно!');
               console.log(xhr, status, res);
-
               $('.systemMessage').addClass('systemMessage__isVisible');
               $('.systemMessage__text').text('Сообщение было успешно отправленно!');
               $('.contactUs__input').val('');
             },
             error: function (xhr, status, err) {
-              console.log('======> ', err, 'Ошибка отправки!');
               console.log(xhr, status, err);
-
               $('.systemMessage').addClass('systemMessage__isVisible');
               $('.systemMessage__text').text('Произошла ошибка!');
             }
