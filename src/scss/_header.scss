@@ -26,8 +26,10 @@
     overflow: hidden;
     cursor: pointer;
   }
+  &__locationMenuMainBtn {
+    z-index: 11;
+  }
   &__locationMenuBtn {
-
     background: $btnColor;
     color: #fff;
     font-size: 25px;
@@ -143,7 +145,7 @@
   &__icon {
     min-width: 45px;
     padding-right: 25px;
-    z-index: 11;
+    z-index: 10;
   }
   &__phoneAddressWrapper {
     display: flex;

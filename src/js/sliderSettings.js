@@ -1,15 +1,4 @@
 
-// $('.intro__slider').slick({
-//   infinite: true,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   autoplay: false,
-//   autoplaySpeed: 5000,
-//   dots: true,
-//   prevArrow: '',
-//   nextArrow: '',
-// });
-
 function slidesToShowFunc () {
   if (window.innerWidth < 600) {
     return 1;
@@ -20,7 +9,10 @@ function slidesToShowFunc () {
   }
 };
 
-// window.onresize = slidesToShowFunc;
+// $(window).resize(function() {
+
+// });
+
 
 $('.apartments__slider').slick({
   infinite: true,
