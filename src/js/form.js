@@ -63,6 +63,7 @@ $(document).ready(function() {
               $('.systemMessage').addClass('systemMessage__isVisible');
               $('.systemMessage__text').text('Сообщение было успешно отправленно!');
               $('.contactUs__input').val('');
+              $('.contactUs__textarea').val('');
             },
             error: function (xhr, status, err) {
               console.log(xhr, status, err);
